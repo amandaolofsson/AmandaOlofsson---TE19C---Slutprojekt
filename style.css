@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.header-text {
+  margin: 0vw 30vw 0 15vw;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: x-large;
+  background-color: white;
+}
+
+header h2 {
+  color: red;
+  background-color: white;
+}
+
+header h4 {
+  background-color: white;
+}
+
+.quiz-header {
+  font-family: "Oswald", sans-serif;
+}
+
+.space-div {
+  height: 20vw;
+}
