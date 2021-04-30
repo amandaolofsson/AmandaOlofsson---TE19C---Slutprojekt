@@ -37,3 +37,8 @@ header h4 {
 .space-div {
   height: 20vw;
 }
+
+#main {
+  position: relative;
+  top: 100px;
+}
