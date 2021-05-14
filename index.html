@@ -5,13 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="main.js"></script>
-    <title>WhatTypeOfBreadAreYou</title>
+    <script defer src="app.js"></script>
+    <title>TheQuiz</title>
   </head>
   <body>
     <header>
@@ -25,12 +20,506 @@
         <h4>Tasty</h4>
       </div>
     </header>
-    <div class="space-div"></div>
-    <main>
-      <div class="quiz-header">
-        <h1>FuzzBeed Quizzes</h1>
-        <h6>All the quizzes you love! Time will fly while you're here</h6>
-      </div>
-    </main>
   </body>
+  <div id="main">
+    <form id="form1">
+      <div class="questionLayout">
+        <h1>How tall are you?</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="height" id="shortest" value="1" /><img
+              src="height/160.png"
+              alt="Under 160 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="shorter" value="2" /><img
+              src="height/165.png"
+              alt="Between
+            160 and 165 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="short" value="5" /><img
+              src="height/170.png"
+              alt="Between
+            165 and 170 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="medium" value="6" /><img
+              src="height/175.png"
+              alt="Between
+            170 and 175 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="over medium" value="4" /><img
+              src="height/180.png"
+              alt="Between 175 and 180 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="high" value="7" /><img
+              src="height/185.png"
+              alt="Between 180
+            and 185 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="higher" value="8" /><img
+              src="height/190.png"
+              alt="Between
+            185 and 190 cm"
+          /></label>
+          <label
+            ><input type="radio" name="height" id="highest" value="3" /><img
+              src="height/190.2.png"
+              alt="Over 190
+            cm"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Have you ever played a sport?</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="sport" id="no" value="1" /><img
+              src="sports/no.jpg"
+              alt="No"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="golf" value="2" /><img
+              src="sports/golf.jpg"
+              alt="Golf"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="basketball" value="3" /><img
+              src="sports/basket.jpg"
+              alt="Basketball"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="other" value="4" /><img
+              src="sports/other.jpg"
+              alt="Other"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="soccer" value="5" /><img
+              src="sports/soccer.jpg"
+              alt="Soccer"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="handball" value="6" /><img
+              src="sports/handball.jpg"
+              alt="Handball"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="swsimming" value="7" /><img
+              src="sports/swim.jpg"
+              alt="Swimming"
+          /></label>
+          <label
+            ><input type="radio" name="sport" id="floorball" value="8" /><img
+              src="sports/floorball.jpg"
+              alt="Floorball"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Where do you want to go on a date?</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="date" id="polarbröd" value="1" /><img
+              src="date/polarbröd.jpg"
+              alt="Polarbrödsfabriken"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="coffeeshop" value="2" /><img
+              src="date/coffeeshop.jpg"
+              alt="Coffee Shop"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="french" value="3" /><img
+              src="date/french.jpg"
+              alt="French Restaurant"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="italian" value="4" /><img
+              src="date/italian.jpg"
+              alt="Italian Restaurant"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="park" value="5" /><img
+              src="date/amusement.jpg"
+              alt="Amusement Park"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="bowling" value="6" /><img
+              src="date/bowling.jpg"
+              alt="Bowling Alley"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="concert" value="7" /><img
+              src="date/concert.jpeg"
+              alt="Concert"
+          /></label>
+          <label
+            ><input type="radio" name="date" id="hike" value="8" /><img
+              src="date/hike.jpg"
+              alt="Hike"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>What type of place would you like to live in?</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="place" id="apartment" value="1" /><img
+              src="living/apartment.jpg"
+              alt="Apartment"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="loft" value="2" /><img
+              src="living/loft.jpg"
+              alt="Loft"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="victorian" value="3" /><img
+              src="living/victorian.jpg"
+              alt="Victorian"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="greek" value="4" /><img
+              src="living/greek.jpg"
+              alt="Greek"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="suburban" value="5" /><img
+              src="living/suburban.jpg"
+              alt="Suburban"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="modern" value="6" /><img
+              src="living/modern.jpg"
+              alt="Modern"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="tent" value="7" /><img
+              src="living/tent.jpg"
+              alt="Tent"
+          /></label>
+          <label
+            ><input type="radio" name="place" id="normal" value="8" /><img
+              src="living/normal.jpg"
+              alt="Normal"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Identify with a fish</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="fish" id="guppy" value="1" /><img
+              src="fish/guppy.jpg"
+              alt="Guppy"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="clownfish" value="2" /><img
+              src="fish/clownfish.jpg"
+              alt="Clownfish"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="eel" value="3" /><img
+              src="fish/eel.jpg"
+              alt="Eel"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="squid" value="4" /><img
+              src="fish/squid.jpg"
+              alt="Squid"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="salmon" value="5" /><img
+              src="fish/salmon.jpg"
+              alt="Salmon"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="angler" value="6" /><img
+              src="fish/anglerfish.jpg"
+              alt="Deep-sea
+            anglerfishes"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="herring" value="7" /><img
+              src="fish/herring.jpg"
+              alt="Herring"
+          /></label>
+          <label
+            ><input type="radio" name="fish" id="Shark" value="8" /><img
+              src="fish/shark.jpg"
+              alt="Shark"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Choose a scent</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="scent" id="soap" value="1" /><img
+              src="smell/soap.jpg"
+              alt="Soap"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="food" value="2" /><img
+              src="smell/food.jpg"
+              alt="Food"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="vanilla" value="3" /><img
+              src="smell/vanilla.jpg"
+              alt="Vanilla"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="salt" value="4" /><img
+              src="smell/ocean.jpeg"
+              alt="Salt
+            water/Ocean"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="perfume" value="5" /><img
+              src="smell/perfume.jpg"
+              alt="Perfume"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="fuel" value="6" /><img
+              src="smell/fuel.jpg"
+              alt="Fuel"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="coffee" value="7" /><img
+              src="smell/coffee.jpg"
+              alt="Coffee"
+          /></label>
+          <label
+            ><input type="radio" name="scent" id="pine" value="8" /><img
+              src="smell/pine.jpg"
+              alt="Pine"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Pick a dish that contains some type of bread</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="dish" id="sandwich" value="1" /><img
+              src="dish/sandwich-27721955.jpg"
+              alt="Sandwich"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="bagel" value="2" /><img
+              src="dish/bagel.jpg"
+              alt="Bagel"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="toast" value="3" /><img
+              src="dish/frenchtoast.jpg"
+              alt="French Toast"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="pizza" value="4" /><img
+              src="dish/pizza.jpg"
+              alt="Pizza"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="hamburger" value="5" /><img
+              src="dish/hamburger.jpg"
+              alt="Hamburger"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="soup" value="6" /><img
+              src="dish/breadsoup.jpg"
+              alt="Bread Soup"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="smörgås" value="7" /><img
+              src="dish/smörgåstårta.jpg"
+              alt="Smörgåstårta"
+          /></label>
+          <label
+            ><input type="radio" name="dish" id="salad" value="8" /><img
+              src="dish/caesar-salad-20329165.jpg"
+              alt="Caesar
+            salad"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout" id="flowerSheet">
+        <h1>A bouquete?</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="flowers" id="1" value="1" />
+            <img src="flowers/pinkroses.jpg" alt="Pink roses"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="2" value="2" />
+            <img src="flowers/hippie.jpg" alt="Colourful bouquete"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="3" value="3" />
+            <img src="flowers/baguetteboquete.jpg" alt="Baguettes"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="4" value="4" />
+            <img src="flowers/italian.jpg" alt="White bouquete"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="5" value="5" />
+            <img src="flowers/basicboquete.jpg" alt="Basic bouquete"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="6" value="6" />
+            <img src="flowers/darkboquete.jpg" alt="Dark bouquete"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="7" value="7" />
+            <img src="flowers/swedish.jpg" alt="Swedish bouquete"
+          /></label>
+          <label
+            ><input type="radio" name="flowers" id="8" value="8" />
+            <img src="flowers/messy.jpg" alt="No flowers, just leafes"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>Pick a quote from a movie</h1>
+        <div class="answerSheet">
+          <label
+            ><input type="radio" name="quote" id="smallest" value="1" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/EvEn THe SmaLLeSt....jpg"
+              alt="Even
+            the smallest person can change the course of the future"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="potatoes" value="2" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/PO TAAAAE TOOEES.jpg"
+              alt="PO-TA-TOES! Boil 'em, mash 'em, stick 'em into a stew"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="hobbits" value="3" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/TheY ArE TaKING THe Hobgolts To Isengaurd.png"
+              alt="They're taking the hobbits to Isengard"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="power" value="4" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/YOu HavE nO pOwEr heRE.jpg"
+              alt="You have no power here"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="one" value="5" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/one-does-not-simply-walk-into-mordor.jpg"
+              alt="One does not simply walk into Mordor"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="pass" value="6" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/You_Shall_Not_Pass!_0-1_screenshot.jpg"
+              alt="You shall not pass"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="jazz" value="7" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/You Like JAaAaAzz.jpg"
+              alt="Ya like jazz?"
+          /></label>
+          <label
+            ><input type="radio" name="quote" id="lost" value="8" /><img
+              src="Masis super braiga bilder för amandas webb project/Citeringar/not-all-those-who-wander-are-lost.jpg"
+              alt="Not all those who wonder are lost"
+          /></label>
+        </div>
+      </div>
+
+      <div class="questionLayout">
+        <h1>What do you like on your bread?</h1>
+        <div class="answerSheet">
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="cheese"
+              value="1" /><img
+              src="Masis super braiga bilder för amandas webb project/Scandiavian-cheeses.jpg"
+              alt="Cheese"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="nutella"
+              value="2" /><img
+              src="Masis super braiga bilder för amandas webb project/nutella.jpg"
+              alt="Nutella"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="avocado"
+              value="3" /><img
+              src="Masis super braiga bilder för amandas webb project/Avocadoes.jpg"
+              alt="Avocado"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="salami"
+              value="4" /><img
+              src="Masis super braiga bilder för amandas webb project/Ew korv.jpg"
+              alt="Salami"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="ham"
+              value="5" /><img
+              src="Masis super braiga bilder för amandas webb project/Flesk.jpg"
+              alt="Ham"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="nothing"
+              value="6" /><img
+              src="Masis super braiga bilder för amandas webb project/nothing.jpg"
+              alt="Nothing"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="kaviar"
+              value="7" /><img
+              src="Masis super braiga bilder för amandas webb project/mums.jpg"
+              alt="Kaviar"
+          /></label>
+          <label
+            ><input
+              type="radio"
+              name="sandwichToppings"
+              id="fish"
+              value="8" /><img
+              src="Masis super braiga bilder för amandas webb project/fishonsandwich.jpg"
+              alt="Fish"
+          /></label>
+        </div>
+      </div>
+
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+    <p id="answer"></p>
+    <h1 id="answer2"></h1>
+  </div>
 </html>
